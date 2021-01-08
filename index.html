@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet | Codecademy Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favi.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="#"><h1>Cheat Sheet</h1></a>
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="html">
+            <table>
+                <caption>HTML Tags</caption>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Requires Closing Tag</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="codetxt">&lt<span class="context-code">Tag Name</span>&gt</td>
+                        <td>Opening Tag</td>
+                        <td>Must be used at the beginning of all HTML tags.</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&lt/<span class="context-code">Tag Name</span>&gt</td>
+                        <td>Closing Tag</td>
+                        <td>Used to end or <em>close</em> an HTML element. When a section of HTML code has an opening tag, contents, and is properly closed it is called an <strong>HTML Element</strong>. Not all HTML tags need a closing tag, but must have an opening tag.</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&lthtml&gt</td>
+                        <td>HTML</td>
+                        <td>All HTML code must be placed inside of an HTML element, in order to be processed properly.</td>
+                        <td><img src="images/checkMark.png" alt="check" class="YNicon"></td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&lthead&gt</td>
+                        <td>Head</td>
+                        <td>Holds Meta Data for HTML file, such as links to CSS files, the title to be displayed in the browser tab, and other resources. Most of this will not necessarily be displyed on the rendered page, as much as it will enhance it.</td>
+                        <td><img src="images/checkMark.png" alt="check" class="YNicon"></td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&ltbody&gt</td>
+                        <td>Body</td>
+                        <td>This contains all the elements that will be displayed on the page. If an element is placed outside of this tag it may still be visible, but this should be avoided.</td>
+                        <td><img src="images/checkMark.png" alt="check" class="YNicon"></td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&lth1&gt</td>
+                        <td>H1</td>
+                        <td>Used for main headings. This tag can be used more than once if logical to do so, such as when sperated by semantic html. However, this should generally be avoided as h2-h6 tags can be used just as well in most cases.</td>
+                        <td><img src="images/checkMark.png" alt="check" class="YNicon"></td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&lth2&gt - &lth6&gt</td>
+                        <td>H2-H6</td>
+                        <td>These are used for subheadings. The number following 'h' denotes priority, or contextual hierarchy. These should not be used for their default styling properties as this is better left to CSS. Rather, they should be used for semantics.</td>
+                        <td><img src="images/checkMark.png" alt="check" class="YNicon"></td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&ltp&gt</td>
+                        <td>Paragragh</td>
+                        <td>This tag is used to display and format text. While most HTML tags can do this, it should still be used <strong>semantically</strong>.</td>
+                        <td><img src="images/checkMark.png" alt="check" class="YNicon"></td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&ltspan&gt</td>
+                        <td>Span</td>
+                        <td>This is used to encapsulate a section of text, usually for the purposes of styling it seperate from the rest of the surrounding text.</td>
+                        <td><img src="images/checkMark.png" alt="yes" class="YNicon"></td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&ltem&gt</td>
+                        <td>Emphasize</td>
+                        <td>While this tag will italicize text by default in most cases, it should not be thought of a an <em>italicizer</em>. Rather it is used to convey the idea that there should be extra notice given to the affected text. There is a tag to italicize (<span class="codetxt">&lti&gt</span>), but it should be avoided.</td>
+                        <td><img src="images/checkMark.png" alt="yes" class="YNicon"></td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&ltstrong&gt</td>
+                        <td>Strong</td>
+                        <td>This is similar to the Emphasize tag, but with more importance or urgency. The default styling will <strong>bold</strong> the affected text. There is a bold tag (<span class="codetxt">&ltb&gt</span>), but this should also be avoided.</td>
+                        <td><img src="images/checkMark.png" alt="" class="YNicon"></td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&lta&gt</td>
+                        <td>Anchor</td>
+                        <td>This tag is used to <em>anchor</em> a link to the page where the element is placed.</td>
+                        <td><img src="images/checkMark.png" alt="" class="YNicon"></td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&ltbr&gt</td>
+                        <td>Line Break</td>
+                        <td>This creates a line break. Whatever element comes after will be placed on a new line.</td>
+                        <td><img src="images/xMark.png" alt="no" class="YNicon"></td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&ltimg&gt</td>
+                        <td>Image</td>
+                        <td>This tag is used to add images to the page. A viable url to an image on the web, or relative path to a local file is needed.</td>
+                        <td><img src="images/xMark.png" alt="" class="YNicon"></td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">&lt!--<span class="context-code">Text Here</span>--&gt</td>
+                        <td>Comment</td>
+                        <td>The text inside of this element will not be displayed on the page. It is used the convey helpful information for anyone looking at the source code.</td>
+                        <td><img src="images/xMark.png" alt="no" class="YNicon"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="css">
+                <caption>CSS</caption>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="codetxt">color</td>
+                        <td>This sets the font color</td>
+                        <td>Color name, HEX, RGB, HSL</td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">background-color</td>
+                        <td>This sets the background color of the selected element.</td>
+                        <td>Color name, HEX, RGB, HSL</td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">font-size</td>
+                        <td>This sets the size of the font based on the chosen unit of measurment.</td>
+                        <td>px, pt, em, rem, %</td>
+                    </tr>
+                    <tr>
+                        <td class="codetxt">font-family</td>
+                        <td>This sets the typeface of the text. Fonts chosen must be preinstalled or linked in order to be able to be displayed. Back-up fonts can be selected and chained with a comma. The browser will iterate through the list until an acceptable font is chosen.</td>
+                        <td>name of font</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
